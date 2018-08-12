@@ -1,0 +1,27 @@
+#div{
+   display:flex;
+   flex-direction: row ;
+}
+#input{
+    margin: 20px;
+    border-color:blue;
+    border-width: 10px;
+}
+#output{
+    margin: 20px;
+    background-color: bisque;
+    word-wrap: break-word;
+    }
+    #inp{
+        text-align: center;
+    }
+    #out{
+       
+        width: 50%;
+    }
+    #head{
+        text-align: center;
+    }
+    body{
+        background-color: azure;
+    }

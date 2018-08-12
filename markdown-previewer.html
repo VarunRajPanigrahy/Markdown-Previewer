@@ -1,0 +1,33 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="mp.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.js"></script>
+</head>
+<body>
+    <div id="head" ><h1>Markdown-Previewer</h1></div>
+    <div id="div">
+        <div id="inp">
+            <h1>Editor</h1>
+        <textarea type="text" id="input" rows="30" cols="68" ></textarea></div>
+        <div id="out">
+            <h1>Preview</h1>
+      <div id="output"></div></div>
+    </div>
+    
+    <div id="rand"></div>
+    <script>
+        function repeat(){
+        var inp=$("#input").val();
+        var lines=inp.split("\n");
+        var pinp="";
+        for(var i=0;i<lines.length;i++){
+            pinp+=lines[i];
+            if(lines[i][0]!=='<') pinp+="<br>"
+        }
+        
+        $("#output").html(pinp);
+        }
+        setInterval(repeat,1)
+       
+    </script>
+</body>
